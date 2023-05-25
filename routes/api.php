@@ -24,3 +24,5 @@ Route::post("/add",[EmployeeController::class,"add"]);
 Route::put("update",[EmployeeController::class,"update"]);
 Route::get("search/{name}",[EmployeeController::class,"search"]);
 Route::delete("delete/{id}",[EmployeeController::class,"delete"]);
+
+Route::post("save",[EmployeeController::class,"testData"]);
