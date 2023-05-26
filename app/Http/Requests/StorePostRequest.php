@@ -24,8 +24,8 @@ class StorePostRequest extends FormRequest
     public static function rules():array
     {
         return [
-            "id" => "required|min:2|max:4|unique:users,id",
-            "name" => "required|min:4|max:10|unique:users,name"
+            "id" => "required|min:2|max:4|unique:employees,id",
+            "name" => "required|min:4|max:20|unique:employees,name"
         ];
     }
 }
